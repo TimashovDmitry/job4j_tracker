@@ -13,9 +13,7 @@ public class Error {
     }
 
     public Error() {
-        active = true;
-        status = 300;
-        message = "Intel Core I9-40300K";
+        
     }
 
     public static void main(String[] args) {
