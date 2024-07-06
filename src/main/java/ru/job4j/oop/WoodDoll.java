@@ -6,6 +6,7 @@ public class WoodDoll {
 
     public WoodDoll(WoodDoll child, String name) {
         this.child = child;
+
         this.name = name;
     }
 
