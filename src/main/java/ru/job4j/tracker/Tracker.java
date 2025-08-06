@@ -50,4 +50,33 @@ public class Tracker {
         }
         return rsl;
     }
+
+    public boolean replace(int id, Item item) {
+        if (indexOf(id) != -1) {
+            Item foundName = items[indexOf(id)];
+            String newName = item.getName();
+            foundName.setName(newName);
+        }
+        return false;
+    }
+
+    private int indexOf(int id) {
+        int result = -1;
+        for (int index = 0; index < size; index++) {
+            if (items[index].getId() == id) {
+                result = index;
+                break;
+            }
+        }
+        return result;
+    }
+
+    public void delete(int id) {
+        if (indexOf(id) != -1) {
+            int start = indexOf(id);
+            System.arraycopy(items, start + 1, items, start, items.length - start - 1);
+            items[items.length - 1] = null;
+            size--;
+        }
+    }
 }
