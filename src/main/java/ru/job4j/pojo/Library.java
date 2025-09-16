@@ -29,6 +29,7 @@ public class Library {
                 System.out.println(name.getName() + " - " + name.getCount());
             }
         }
+
         System.out.println("Show book Clean code");
         for (int index = 0; index < products.length; index++) {
             Book product = products[index];
