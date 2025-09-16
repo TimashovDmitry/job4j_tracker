@@ -32,7 +32,7 @@ public class Library {
         System.out.println("Show book Clean code");
         for (int index = 0; index < products.length; index++) {
             Book product = products[index];
-            if (product.getName().equals("Clean code")) {
+            if (("Clean code").equals(product.getName())) {
                 System.out.println(product.getName() + " - " + product.getCount());
             }
         }
