@@ -18,7 +18,7 @@ public class Library {
         }
 
         System.out.println("Change index 0 to 3.");
-        for (int index = 0; index < products.length; index++) {
+        for  (int index = 0; index < products.length; index++) {
             if (index == 0) {
                 Book came = products[3];
                 products[3] = products[0];
