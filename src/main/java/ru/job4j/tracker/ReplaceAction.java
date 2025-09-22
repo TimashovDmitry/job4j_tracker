@@ -1,5 +1,4 @@
-package ru.job4j.tracker;
-
+ package ru.job4j.tracker;
 public class ReplaceAction implements UserAction {
 
     private final Output output;
@@ -7,6 +6,7 @@ public class ReplaceAction implements UserAction {
     public ReplaceAction(Output output) {
         this.output = output;
     }
+
     @Override
     public String name() {
         return "Изменить заявку";
